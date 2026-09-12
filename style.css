@@ -1,0 +1,1159 @@
+:root {
+     --bg: #0b0d12;
+     --surface: #121620;
+     --surface-2: #191f2c;
+     --text: #f5f7fb;
+     --muted: #a6afc2;
+     --primary: #ff6b35;
+     --primary-2: #ff9a62;
+     --border: rgba(255, 255, 255, .10);
+     --shadow: 0 20px 70px rgba(0, 0, 0, .25);
+ }
+
+ body.light {
+     --bg: #f6f7fb;
+     --surface: #ffffff;
+     --surface-2: #eef1f7;
+     --text: #111827;
+     --muted: #5d6678;
+     --border: rgba(17, 24, 39, .12);
+     --shadow: 0 20px 70px rgba(35, 45, 75, .12);
+ }
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: Inter, sans-serif;
+     background: var(--bg);
+     color: var(--text);
+     line-height: 1.6;
+     transition: .3s;
+ }
+
+ a {
+     color: inherit;
+     text-decoration: none;
+ }
+
+ .container {
+     width: min(1120px, 92%);
+     margin: auto;
+ }
+
+ header {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 100;
+     background: color-mix(in srgb, var(--bg) 85%, transparent);
+     backdrop-filter: blur(16px);
+     border-bottom: 1px solid var(--border);
+ }
+
+ nav {
+     min-height: 76px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 20px;
+ }
+
+ .logo {
+     font-family: "Space Grotesk";
+     font-size: 1.35rem;
+     font-weight: 700;
+ }
+
+ .logo span {
+     color: var(--primary);
+ }
+
+ .nav-links {
+     display: flex;
+     gap: 24px;
+     list-style: none;
+     align-items: center;
+ }
+
+ .nav-links a {
+     color: var(--muted);
+     font-size: .92rem;
+     transition: .2s;
+ }
+
+ .nav-links a:hover {
+     color: var(--primary);
+ }
+
+ .actions {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ button,
+ .btn {
+     border: 0;
+     cursor: pointer;
+     border-radius: 12px;
+     padding: 12px 18px;
+     font-weight: 700;
+     transition: .2s;
+     display: inline-block;
+ }
+
+ .btn-primary {
+     background: var(--primary);
+     color: #151515;
+ }
+
+ .btn-primary:hover {
+     transform: translateY(-3px);
+     background: var(--primary-2);
+ }
+
+ .btn-outline {
+     border: 1px solid var(--border);
+     color: var(--text);
+     background: var(--surface);
+ }
+
+ .btn-outline:hover {
+     border-color: var(--primary);
+ }
+
+ .icon-btn {
+     background: var(--surface);
+     color: var(--text);
+     border: 1px solid var(--border);
+     padding: 10px 12px;
+ }
+
+ .menu-btn {
+     display: none;
+ }
+
+ section {
+     padding: 105px 0;
+ }
+
+ .hero {
+     min-height: 100vh;
+     display: grid;
+     place-items: center;
+     padding-top: 145px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .hero::before {
+     content: "";
+     position: absolute;
+     width: 450px;
+     height: 450px;
+     background: var(--primary);
+     filter: blur(150px);
+     opacity: .13;
+     right: -180px;
+     top: 100px;
+ }
+
+ .hero-grid {
+     display: grid;
+     grid-template-columns: 1.2fr .8fr;
+     gap: 70px;
+     align-items: center;
+ }
+
+ .eyebrow {
+     color: var(--primary);
+     font-weight: 800;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     font-size: .78rem;
+     margin-bottom: 16px;
+ }
+
+ h1 {
+     font-family: "Space Grotesk";
+     font-size: clamp(2.7rem, 6vw, 5.4rem);
+     line-height: 1.03;
+     letter-spacing: -3px;
+     margin-bottom: 22px;
+ }
+
+ h1 span {
+     color: var(--primary);
+ }
+
+ .hero p {
+     max-width: 600px;
+     color: var(--muted);
+     font-size: 1.05rem;
+     margin-bottom: 30px;
+ }
+
+ .hero-buttons {
+     display: flex;
+     gap: 12px;
+     flex-wrap: wrap;
+ }
+
+ .hero-card {
+     position: relative;
+     background: linear-gradient(145deg, var(--surface), var(--surface-2));
+     border: 1px solid var(--border);
+     border-radius: 28px;
+     padding: 30px;
+     box-shadow: var(--shadow);
+     transform: rotate(3deg);
+ }
+
+ .avatar {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin: 0 auto 24px;
+     display: grid;
+     place-items: center;
+     background: var(--primary);
+     color: #161616;
+     font-family: "Space Grotesk";
+     font-size: 3rem;
+     font-weight: 800;
+     border: 8px solid var(--bg);
+ }
+
+ .hero-card h3 {
+     text-align: center;
+     font-family: "Space Grotesk";
+     font-size: 1.45rem;
+ }
+
+ .hero-card p {
+     text-align: center;
+     margin: 8px auto 20px;
+     font-size: .9rem;
+ }
+
+ .mini-tags {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     justify-content: center;
+ }
+
+ .tag {
+     border: 1px solid var(--border);
+     background: var(--surface);
+     padding: 7px 10px;
+     border-radius: 999px;
+     font-size: .75rem;
+     color: var(--muted);
+ }
+
+ .section-head {
+     margin-bottom: 35px;
+ }
+
+ .section-head h2 {
+     font-family: "Space Grotesk";
+     font-size: clamp(2rem, 4vw, 3rem);
+     letter-spacing: -1px;
+ }
+
+ .section-head p {
+     color: var(--muted);
+     max-width: 650px;
+     margin-top: 8px;
+ }
+
+ .about-grid,
+ .contact-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 35px;
+ }
+
+ .card {
+     background: var(--surface);
+     border: 1px solid var(--border);
+     border-radius: 20px;
+     padding: 28px;
+     box-shadow: var(--shadow);
+ }
+
+ .card h3 {
+     font-family: "Space Grotesk";
+     margin-bottom: 12px;
+ }
+
+ .card p {
+     color: var(--muted);
+ }
+
+ .stats {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 12px;
+     margin-top: 22px;
+ }
+
+ .stat {
+     background: var(--surface-2);
+     padding: 18px;
+     border-radius: 15px;
+     text-align: center;
+ }
+
+ .stat strong {
+     display: block;
+     color: var(--primary);
+     font-size: 1.5rem;
+ }
+
+ .skills {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 12px;
+ }
+
+ .skill {
+     padding: 13px 17px;
+     border: 1px solid var(--border);
+     background: var(--surface);
+     border-radius: 12px;
+     color: var(--text);
+ }
+
+ .projects {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+ }
+
+ .project {
+     overflow: hidden;
+     padding: 0;
+ }
+
+ .project-top {
+     height: 150px;
+     display: grid;
+     place-items: center;
+     background: linear-gradient(135deg, var(--primary), #34243b);
+     color: white;
+     font-size: 3rem;
+ }
+
+ .project-body {
+     padding: 24px;
+ }
+
+ .project-body p {
+     margin: 10px 0 18px;
+     font-size: .9rem;
+ }
+
+ .project-body a {
+     color: var(--primary);
+     font-weight: 700;
+ }
+
+ .timeline {
+     border-left: 2px solid var(--primary);
+     padding-left: 24px;
+ }
+
+ .timeline-item {
+     margin-bottom: 24px;
+ }
+
+ .timeline-item small {
+     color: var(--primary);
+     font-weight: 700;
+ }
+
+ form {
+     display: grid;
+     gap: 14px;
+ }
+
+ input,
+ textarea {
+     width: 100%;
+     border: 1px solid var(--border);
+     background: var(--surface-2);
+     color: var(--text);
+     padding: 14px;
+     border-radius: 12px;
+     font: inherit;
+     outline: none;
+ }
+
+ input:focus,
+ textarea:focus {
+     border-color: var(--primary);
+ }
+
+ textarea {
+     min-height: 150px;
+     resize: vertical;
+ }
+
+ footer {
+     border-top: 1px solid var(--border);
+     padding: 28px 0;
+     color: var(--muted);
+     text-align: center;
+     font-size: .9rem;
+ }
+
+ .socials {
+     display: flex;
+     gap: 15px;
+     margin-top: 18px;
+     flex-wrap: wrap;
+ }
+
+ .socials a {
+     color: var(--primary);
+     font-weight: 700;
+ }
+
+ .reveal {
+     opacity: 0;
+     transform: translateY(25px);
+     transition: .7s;
+ }
+
+ .reveal.show {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ @media (max-width: 850px) {
+
+     .hero-grid,
+     .about-grid,
+     .contact-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .hero-card {
+         max-width: 390px;
+         margin: auto;
+     }
+
+     .projects {
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .nav-links {
+         display: none;
+         position: absolute;
+         top: 76px;
+         left: 0;
+         right: 0;
+         background: var(--surface);
+         padding: 25px;
+         flex-direction: column;
+         border-bottom: 1px solid var(--border);
+     }
+
+     .nav-links.open {
+         display: flex;
+     }
+
+     .menu-btn {
+         display: block;
+     }
+ }
+
+ @media (max-width: 560px) {
+     h1 {
+         letter-spacing: -1.5px;
+     }
+
+     .projects {
+         grid-template-columns: 1fr;
+     }
+
+     .stats {
+         grid-template-columns: 1fr;
+     }
+
+     section {
+         padding: 75px 0;
+     }
+ }
+
+
+
+ /* =========================
+   Social Media Section
+========================= */
+
+/* =====================================
+   PROFESSIONAL CONTACT SECTION
+===================================== */
+
+#contact {
+  position: relative;
+  padding: 110px 0;
+  overflow: hidden;
+}
+
+/* Background Glow */
+#contact::before,
+#contact::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(100px);
+}
+
+#contact::before {
+  top: 10%;
+  left: -180px;
+  width: 380px;
+  height: 380px;
+  background: rgba(244, 142, 33, 0.10);
+}
+
+#contact::after {
+  right: -180px;
+  bottom: 5%;
+  width: 350px;
+  height: 350px;
+  background: rgba(244, 142, 33, 0.06);
+}
+
+/* Section Heading */
+#contact .section-head {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+#contact .section-head h2 {
+  margin: 12px 0 16px;
+  font-size: clamp(32px, 4vw, 50px);
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+}
+
+#contact .section-head p {
+  max-width: 600px;
+  margin: auto;
+  color: var(--muted-color);
+  line-height: 1.8;
+}
+
+/* =====================================
+   CONTACT GRID
+===================================== */
+
+.contact-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* =====================================
+   CONTACT BOX / CARD
+===================================== */
+
+.contact-grid .card {
+  position: relative;
+
+  padding: 34px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.01)
+    ),
+    var(--card-bg);
+
+  box-shadow:
+    0 20px 70px rgba(0, 0, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Top Orange Line */
+.contact-grid .card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #f48e21,
+    transparent
+  );
+
+  border-radius: 0 0 10px 10px;
+}
+
+/* Card Hover */
+.contact-grid .card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(244, 142, 33, 0.35);
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.14),
+    0 0 35px rgba(244, 142, 33, 0.06);
+}
+
+/* =====================================
+   CARD HEADER
+===================================== */
+
+.contact-grid .card h3 {
+  margin: 0 0 12px;
+
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.contact-grid .card > p {
+  margin-bottom: 28px;
+
+  color: var(--muted-color);
+
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* =====================================
+   PROFILE LINK BOXES
+===================================== */
+
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.profile-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  min-width: 0;
+  padding: 15px;
+
+  color: var(--text-color);
+  text-decoration: none;
+
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(128, 128, 128, 0.025)
+    );
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Profile Box Hover */
+.profile-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(244, 142, 33, 0.55);
+
+  background: rgba(244, 142, 33, 0.07);
+
+  box-shadow:
+    0 12px 30px rgba(244, 142, 33, 0.12);
+}
+
+/* Profile Icon Box */
+.profile-card img {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  padding: 9px;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+
+  background: rgba(244, 142, 33, 0.12);
+
+  border: 1px solid rgba(244, 142, 33, 0.15);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.profile-card:hover img {
+  transform: scale(1.1) rotate(5deg);
+
+  background: rgba(244, 142, 33, 0.20);
+}
+
+/* Profile Text */
+.profile-card div {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-card h4 {
+  margin: 0 0 4px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-card p {
+  margin: 0;
+
+  color: var(--muted-color);
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Arrow */
+.profile-card > span {
+  color: #f48e21;
+
+  font-size: 17px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.profile-card:hover > span {
+  transform: translate(4px, -4px);
+  color: #ff9f3f;
+}
+
+/* =====================================
+   CONTACT FORM BOX
+===================================== */
+
+.contact-form {
+  position: relative;
+}
+
+/* Form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  margin-top: 28px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  color: var(--text-color);
+  background: rgba(128, 128, 128, 0.035);
+
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* Input Height */
+.contact-form input {
+  height: 55px;
+}
+
+/* Textarea */
+.contact-form textarea {
+  min-height: 175px;
+  resize: vertical;
+}
+
+/* Input Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f48e21;
+
+  background: rgba(244, 142, 33, 0.035);
+
+  box-shadow:
+    0 0 0 4px rgba(244, 142, 33, 0.09),
+    0 8px 25px rgba(244, 142, 33, 0.05);
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted-color);
+  opacity: 0.75;
+}
+
+/* =====================================
+   SEND BUTTON
+===================================== */
+
+.contact-form .btn {
+  position: relative;
+
+  width: 100%;
+  min-height: 55px;
+
+  margin-top: 3px;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Button Hover */
+.contact-form .btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 30px rgba(244, 142, 33, 0.25);
+}
+
+/* Button Active */
+.contact-form .btn:active {
+  transform: translateY(0);
+}
+
+/* =====================================
+   FORM STATUS
+===================================== */
+
+#form-status {
+  display: none;
+
+  margin-top: 15px;
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  border: 1px solid var(--border-color);
+
+  background: rgba(128, 128, 128, 0.04);
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1000px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contact-grid .card {
+    padding: 30px;
+  }
+
+  .profile-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  #contact {
+    padding: 75px 0;
+  }
+
+  #contact .section-head {
+    margin-bottom: 35px;
+  }
+
+  #contact .section-head h2 {
+    font-size: 32px;
+  }
+
+  .contact-grid {
+    gap: 20px;
+  }
+
+  .contact-grid .card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .contact-grid .card h3 {
+    font-size: 21px;
+  }
+
+  .profile-links {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    padding: 14px;
+  }
+
+  .profile-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-form input {
+    height: 52px;
+  }
+
+  .contact-form textarea {
+    min-height: 150px;
+  }
+}
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact-grid .card,
+  .profile-card,
+  .profile-card img,
+  .profile-card > span,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .btn {
+    transition: none;
+  }
+}
+
+
+
+
+
+/* =========================
+   MOVING BORDER ANIMATION
+========================= */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 20px;
+  background: #111;
+  z-index: 1;
+}
+
+/* Moving glowing border */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 300deg,
+    #2457ff 330deg,
+    #2457ff 345deg,
+    transparent 360deg
+  );
+  animation: borderSpin 4s linear infinite;
+  z-index: -2;
+}
+
+/* Card inner background */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 18px;
+  background: #111;
+  z-index: -1;
+}
+
+/* Animation */
+@keyframes borderSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+/* ================================
+   Skill Cards - Animated Border
+================================ */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+  border-radius: 14px;
+
+  background: #151515;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Animated glowing border */
+.skill::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 250deg,
+    #315cff 285deg,
+    #6d4aff 315deg,
+    #315cff 345deg,
+    transparent 360deg
+  );
+
+  border-radius: inherit;
+
+  animation: skillBorder 3s linear infinite;
+
+  z-index: -2;
+}
+
+/* Inner dark background */
+.skill::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+
+  background: #151515;
+  border-radius: 12px;
+
+  z-index: -1;
+}
+
+/* Border movement */
+@keyframes skillBorder {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover */
+.skill:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 0 12px rgba(49, 92, 255, 0.45),
+    0 0 30px rgba(49, 92, 255, 0.2);
+}
+
+/* Pause animation on hover */
+.skill:hover::before {
+  animation-duration: 1.5s;
+}
