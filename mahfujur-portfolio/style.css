@@ -277,14 +277,14 @@
    AVATAR
 ========================= */
 .avatar-wrapper {
-  width: 220px;   /* আগে 165px ছিল, বাড়িয়ে দিলাম */
-  height: 220px;  /* আগে 165px ছিল */
+  width: 220px;
+  height: 220px;
   margin: 0 auto 25px;
 }
 
 .avatar {
-  width: 440px;   /* wrapper এর ডাবল */
-  height: 440px;  /* wrapper এর ডাবল */
+  width: 440px;
+  height: 440px;
   padding: 8px;
   position: relative;
   overflow: hidden;
@@ -344,6 +344,83 @@
 
   to   { transform: scale(0.5) rotate(360deg); }
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+  .avatar-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .avatar {
+    width: 360px;
+    height: 360px;
+    border-radius: 98px 21px 98px 21px;
+  }
+
+  .avatar::after {
+    border-radius: 91px 15px 91px 15px;
+  }
+
+  .avatar img {
+    border-radius: 91px 15px 91px 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .avatar-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+  }
+
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 82px 18px 82px 18px;
+  }
+
+  .avatar::after {
+    border-radius: 76px 12px 76px 12px;
+  }
+
+  .avatar img {
+    border-radius: 76px 12px 76px 12px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .avatar-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+
+  .avatar {
+    width: 260px;
+    height: 260px;
+    border-radius: 71px 15px 71px 15px;
+  }
+
+  .avatar::after {
+    border-radius: 65px 10px 65px 10px;
+  }
+
+
+  .avatar img {
+    border-radius: 65px 10px 65px 10px;
+  }
+}
+
+
+
+
+
+
+
+
 /* =========================
    CARD TEXT
 ========================= */
@@ -431,10 +508,7 @@
     font-size: 23px;
   }
 
-  .avatar {
-    width: 105px;
-    height: 105px;
-  }
+  
 
   .tag {
     padding: 8px 12px;
