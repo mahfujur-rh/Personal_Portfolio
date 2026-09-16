@@ -785,7 +785,21 @@
  /* =========================
    Social Media Section
 ========================= */
+.profile-links a .fa-linkedin-in {
+    width: 42px;
+    height: 42px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #3a2a1c;
+    color: #ffffff;
+
+    font-size: 20px;
+}
 /* =====================================
    PROFESSIONAL CONTACT SECTION
 ===================================== */
@@ -1443,4 +1457,445 @@
 /* Pause animation on hover */
 .skill:hover::before {
   animation-duration: 1.5s;
+}
+
+
+
+/* =========================================================
+   LIGHT MODE TEXT & CARD VISIBILITY FIX
+   Put this CSS at the VERY END of your stylesheet
+========================================================= */
+
+/* ---------- Light Mode Variables ---------- */
+
+body.light {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-2: #eef1f7;
+
+    --text: #111827;
+    --muted: #5d6678;
+
+    --primary: #ff6b35;
+    --primary-2: #e85b2a;
+
+    --border: rgba(17, 24, 39, 0.12);
+
+    /* Variables used by your contact CSS */
+    --text-color: #111827;
+    --muted-color: #5d6678;
+    --border-color: rgba(17, 24, 39, 0.12);
+    --card-bg: #ffffff;
+
+    --shadow: 0 20px 70px rgba(35, 45, 75, 0.12);
+}
+
+
+/* =========================================================
+   GENERAL TEXT
+========================================================= */
+
+body.light {
+    background: var(--bg);
+    color: var(--text);
+}
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light h4,
+body.light h5,
+body.light h6 {
+    color: var(--text);
+}
+
+body.light p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+body.light header {
+    background: rgba(246, 247, 251, 0.88);
+    border-bottom: 1px solid var(--border);
+}
+
+body.light .nav-links a {
+    color: #4b5563;
+}
+
+body.light .nav-links a:hover {
+    color: var(--primary);
+}
+
+body.light .logo {
+    color: var(--text);
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+body.light .btn-outline {
+    background: #ffffff;
+    color: #111827;
+    border-color: rgba(17, 24, 39, 0.14);
+}
+
+body.light .btn-outline:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+body.light .icon-btn {
+    background: #ffffff;
+    color: #111827;
+    border-color: rgba(17, 24, 39, 0.14);
+}
+
+
+/* =========================================================
+   HERO CARD
+========================================================= */
+
+body.light .hero-card {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f1f4f9
+        );
+
+    border-color: rgba(17, 24, 39, 0.12);
+
+    box-shadow:
+        0 20px 60px rgba(35, 45, 75, 0.14);
+}
+
+
+/* Inner hero card */
+
+body.light .hero-card::after {
+    background: #ffffff;
+}
+
+
+/* Hero card text */
+
+body.light .hero-card h3 {
+    color: #111827;
+}
+
+body.light .hero-card p {
+    color: #5d6678;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+body.light .tag {
+    color: #374151;
+    background: #f3f4f6;
+    border-color: rgba(17, 24, 39, 0.12);
+}
+
+body.light .tag:hover {
+    color: #111827;
+    background: rgba(0, 229, 255, 0.08);
+}
+
+
+/* =========================================================
+   NORMAL CARDS
+========================================================= */
+
+body.light .card {
+    background: #ffffff;
+    color: #111827;
+
+    border: 1px solid rgba(17, 24, 39, 0.10);
+
+    box-shadow:
+        0 15px 45px rgba(35, 45, 75, 0.08);
+}
+
+body.light .card::after {
+    background: #ffffff;
+}
+
+body.light .card h3 {
+    color: #111827;
+}
+
+body.light .card p {
+    color: #5d6678;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+body.light .section-head h2 {
+    color: #111827;
+}
+
+body.light .section-head p {
+    color: #5d6678;
+}
+
+body.light .eyebrow {
+    color: #e85b2a;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+body.light .stat {
+    background: #eef1f7;
+}
+
+body.light .stat strong {
+    color: #e85b2a;
+}
+
+body.light .stat span,
+body.light .stat p {
+    color: #4b5563;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+body.light .skill {
+    background: #ffffff;
+    color: #111827;
+
+    border: 1px solid rgba(17, 24, 39, 0.12);
+
+    box-shadow:
+        0 5px 18px rgba(35, 45, 75, 0.06);
+}
+
+body.light .skill::after {
+    background: #ffffff;
+}
+
+body.light .skill:hover {
+    color: #111827;
+}
+
+
+/* =========================================================
+   PROJECT CARDS
+========================================================= */
+
+body.light .project {
+    background: #ffffff;
+}
+
+body.light .project-body h3 {
+    color: #111827;
+}
+
+body.light .project-body p {
+    color: #5d6678;
+}
+
+body.light .project-body a {
+    color: #e85b2a;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+body.light .timeline {
+    border-left-color: var(--primary);
+}
+
+body.light .timeline-item {
+    color: #111827;
+}
+
+body.light .timeline-item p {
+    color: #5d6678;
+}
+
+body.light .timeline-item small {
+    color: #e85b2a;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+body.light #contact {
+    background: #f6f7fb;
+}
+
+
+/* Contact Cards */
+
+body.light .contact-grid .card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.98),
+            rgba(248, 249, 252, 0.98)
+        );
+
+    border: 1px solid rgba(17, 24, 39, 0.10);
+
+    color: #111827;
+
+    box-shadow:
+        0 20px 60px rgba(35, 45, 75, 0.10);
+}
+
+
+/* Contact heading */
+
+body.light .contact-grid .card h3 {
+    color: #111827;
+}
+
+body.light .contact-grid .card > p {
+    color: #5d6678;
+}
+
+
+/* =========================================================
+   PROFILE CARDS
+========================================================= */
+
+body.light .profile-card {
+    color: #111827;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f6f7fa
+        );
+
+    border-color: rgba(17, 24, 39, 0.10);
+}
+
+body.light .profile-card h4 {
+    color: #111827;
+}
+
+body.light .profile-card p {
+    color: #667085;
+}
+
+body.light .profile-card:hover {
+    background: rgba(244, 142, 33, 0.06);
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+body.light .contact-form input,
+body.light .contact-form textarea {
+    color: #111827;
+
+    background: #f8f9fc;
+
+    border-color: rgba(17, 24, 39, 0.12);
+}
+
+body.light .contact-form input::placeholder,
+body.light .contact-form textarea::placeholder {
+    color: #667085;
+}
+
+body.light .contact-form input:focus,
+body.light .contact-form textarea:focus {
+    background: #ffffff;
+    color: #111827;
+    border-color: #f48e21;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+body.light footer {
+    color: #5d6678;
+    border-top-color: rgba(17, 24, 39, 0.10);
+}
+
+body.light .socials a {
+    color: #e85b2a;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 850px) {
+
+    body.light .nav-links {
+        background: #ffffff;
+        border-bottom: 1px solid rgba(17, 24, 39, 0.10);
+    }
+
+    body.light .nav-links a {
+        color: #374151;
+    }
+
+    body.light .nav-links a:hover {
+        color: var(--primary);
+    }
+}
+
+
+/* =========================================================
+   FORCE TEXT VISIBILITY
+========================================================= */
+
+body.light .hero,
+body.light .about-grid,
+body.light .skills,
+body.light .projects,
+body.light .contact-grid {
+    color: #111827;
+}
+
+body.light .hero p,
+body.light .about-grid p,
+body.light .projects p,
+body.light .contact-grid p {
+    color: #5d6678;
+}
+
+
+/* =========================================================
+   IMAGE / AVATAR BACKGROUND
+========================================================= */
+
+body.light .avatar {
+    background: #ffffff;
+}
+
+body.light .avatar::after {
+    background: #ffffff;
 }
