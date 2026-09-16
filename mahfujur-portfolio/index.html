@@ -1,423 +1,919 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahfujur Rahman | Portfolio</title>
-    <meta name="description"
-      content="Personal portfolio of Mahfujur Rahman — CSE Student, Frontend Developer and Problem Solver." />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav class="container">
-        <a href="#home" class="logo">Mahfujur<span>.</span></a>
+<head>
+    <meta charset="UTF-8">
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mahfujur Rahman | Portfolio</title>
+
+<meta name="description"
+    content="Personal portfolio of Mahfujur Rahman — CSE Student, Frontend Developer and Problem Solver.">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
+
+<header>
+    <nav class="container">
+
+        <a href="#home" class="logo">
+            Mahfujur<span>.</span>
+        </a>
+
         <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Home</a></li><li><a
-              href="#about">About</a></li><li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li><li><a
-              href="#education">Education</a></li><li><a
-              href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
         <div class="actions">
-          <button class="icon-btn" id="themeBtn"
-            aria-label="Toggle theme">☀</button>
-          <button class="icon-btn menu-btn" id="menuBtn"
-            aria-label="Open menu">☰</button>
+
+            <button
+                class="icon-btn"
+                id="themeBtn"
+                type="button"
+                aria-label="Toggle theme">
+                ☀
+            </button>
+
+            <button
+                class="icon-btn menu-btn"
+                id="menuBtn"
+                type="button"
+                aria-label="Open menu">
+                ☰
+            </button>
+
         </div>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero" id="home">
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section class="hero" id="home">
+
         <div class="container hero-grid">
-          <div class="reveal">
-            <div class="eyebrow">Hello, I am</div>
-            <h1>Mahfujur<br><span>Rahman.</span></h1>
-            <p>CSE Student • Frontend Developer • Problem Solver. I build
-              modern, responsive websites and practical software projects with
-              creativity and clean code.</p>
-            <div class="hero-buttons">
-              <a class="btn btn-primary" href="#projects">View My Work ↗</a>
-              <a class="btn btn-outline" href="#contact">Let's Talk</a>
+
+            <div class="reveal">
+
+                <div class="eyebrow">
+                    Hello, I am
+                </div>
+
+                <h1>
+                    Mahfujur<br>
+                    <span>Rahman.</span>
+                </h1>
+
+                <p>
+                    CSE Student • Frontend Developer • Problem Solver.
+                    I build modern, responsive websites and practical
+                    software projects with creativity and clean code.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="btn btn-primary" href="#projects">
+                        View My Work ↗
+                    </a>
+
+                    <a class="btn btn-outline" href="#contact">
+                        Let's Talk
+                    </a>
+
+                </div>
+
             </div>
-          </div>
-          <div class="hero-card reveal">
-            <div class="avatar-wrapper">
-              <div class="avatar">
-                <img src="/photo/photo.png" alt="avatar">
-              </div>
+
+
+            <div class="hero-card reveal">
+
+                <div class="avatar-wrapper">
+
+                    <div class="avatar">
+
+                        <img
+                            src="photo/photo.png"
+                            alt="Mahfujur Rahman">
+
+                    </div>
+
+                </div>
+
+                <h3>
+                    Creative Developer
+                </h3>
+
+                <p>
+                    Turning ideas into digital experiences.
+                </p>
+
+                <div class="mini-tags">
+
+                    <span class="tag">CSE Student</span>
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Frontend</span>
+                    <span class="tag">C++</span>
+
+                </div>
+
             </div>
 
-            <h3>Creative Developer</h3>
+        </div>
 
-            <p>Turning ideas into digital experiences.</p>
+    </section>
 
-            <div class="mini-tags">
-              <span class="tag">CSE Student</span>
-              <span class="tag">WordPress</span>
-              <span class="tag">Frontend</span>
-              <span class="tag">C++</span>
-            </div>
-          </div>
-        </section>
 
-        <section id="about">
-          <div class="container">
-            <div class="section-head reveal"><div class="eyebrow">About
-                me</div><h2>A little about myself</h2><p>Passionate about
-                technology, design and continuous learning.</p></div>
-            <div class="about-grid">
-              <div class="card reveal">
-                <h3>Who I am</h3>
-                <p>I am Mahfujur Rahman, a Computer Science and Engineering
-                  undergraduate at Metropolitan University, Bangladesh. I enjoy
-                  creating websites, exploring programming, solving problems and
-                  turning ideas into useful digital products.</p>
-                <div class="stats"><div
-                    class="stat"><strong>2+</strong><span>Years
-                      Learning</span></div><div
-                    class="stat"><strong>10+</strong><span>Skills</span></div><div
-                    class="stat"><strong>∞</strong><span>Ideas</span></div></div>
-              </div>
-              <div class="card reveal">
-                <h3>What I do</h3>
-                <p>My main interests include frontend development, WordPress
-                  website design, digital marketing and software development. I
-                  am
-                  focused on becoming an industry-ready software engineer.</p>
-                <div class="socials"><a href="https://github.com/mahfujur-rh"
-                    target="_blank">GitHub ↗</a><a
-                    href="https://www.linkedin.com/in/mahfujur-rh"
-                    target="_blank">LinkedIn ↗</a><a
-                    href="mailto:mahfujurrahman1319@gmail.com">Email ↗</a></div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <!-- =====================================================
+         ABOUT SECTION
+    ====================================================== -->
 
-        <section id="skills">
-          <div class="container">
-            <div class="section-head reveal"><div class="eyebrow">My
-                toolkit</div><h2>Skills & technologies</h2><p>Tools and
-                technologies I use or am currently learning.</p></div>
-            <div class="skills reveal">
-              <span class="skill">HTML5</span><span
-                class="skill">CSS3</span><span
-                class="skill">JavaScript</span><span class="skill">C</span><span
-                class="skill">C++</span><span class="skill">Java</span>
-              <span class="skill">Tailwind
-                CSS</span><span class="skill">WordPress</span><span
-                class="skill">Elementor</span><span
-                class="skill">WooCommerce</span><span
-                class="skill">Bootstrap</span><span class="skill">Git &
-                GitHub</span><span class="skill">MySQL</span><span
-                class="skill">SEO</span><span class="skill">Digital
-                Marketing</span>
-            </div>
-          </div>
-        </section>
+    <section id="about">
 
-        <section id="projects">
-          <div class="container">
-            <div class="section-head reveal"><div class="eyebrow">Selected
-                work</div><h2>Featured projects</h2><p>A few projects that
-                represent my learning and development journey.</p></div>
-            <div class="projects">
-              <article class="card project reveal"><div
-                  class="project-top">🖥️</div><div
-                  class="project-body"><h3>Custom PC Builder</h3><p>A web-based
-                    system for selecting PC components, checking compatibility
-                    and
-                    calculating total prices.</p><a
-                    href="https://github.com/mahfujur-rh/Custom-Pc-Builder"
-                    target="_blank">View project ↗</a></div></article>
-              <article class="card project reveal"><div
-                  class="project-top">📚</div><div
-                  class="project-body"><h3>StudyPilot</h3><p>A student
-                    productivity platform for managing subjects, topics, exams
-                    and
-                    study schedules.</p><a href="#contact">More details
-                    ↗</a></div></article>
-              <article class="card project reveal"><div
-                  class="project-top">🤖</div><div
-                  class="project-body"><h3>Mahfuz
-                    AI</h3><p>A personal AI assistant concept designed to
-                    provide
-                    multilingual and friendly digital assistance.</p><a
-                    href="#contact">More details ↗</a></div></article>
-            </div>
-          </div>
-        </section>
+        <div class="container">
 
-        <section id="education">
-          <div class="container">
-            <div class="section-head reveal"><div class="eyebrow">My
-                journey</div><h2>Education</h2></div>
-            <div class="card timeline reveal">
-              <div class="timeline-item"><small>2024 — Present</small><h3>B.Sc.
-                  in
-                  Computer Science & Engineering</h3><p>Metropolitan University,
-                  Sylhet, Bangladesh</p></div>
-              <div class="timeline-item"><small>2023</small><h3>Higher Secondary
-                  Certificate</h3><p>Sylhet Science & Technology College, Sylhet
-                  Board</p></div>
-              <div class="timeline-item"><small>2021</small><h3>Secondary School
-                  Certificate</h3><p>Al Hera Academy, Sylhet Board</p></div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-          <div class="container">
-
-            <!-- Section Heading -->
             <div class="section-head reveal">
-              <div class="eyebrow">Get in touch</div>
 
-              <h2>Let's build something great</h2>
+                <div class="eyebrow">
+                    About me
+                </div>
 
-              <p>
-                Have a project idea or want to connect?
-                Send me a message or explore my profiles.
-              </p>
+                <h2>
+                    A little about myself
+                </h2>
+
+                <p>
+                    Passionate about technology, design and continuous learning.
+                </p>
+
             </div>
+
+
+            <div class="about-grid">
+
+                <div class="card reveal">
+
+                    <h3>
+                        Who I am
+                    </h3>
+
+                    <p>
+                        I am Mahfujur Rahman, a Computer Science and
+                        Engineering undergraduate at Metropolitan University,
+                        Bangladesh. I enjoy creating websites, exploring
+                        programming, solving problems and turning ideas into
+                        useful digital products.
+                    </p>
+
+
+                    <div class="stats">
+
+                        <div class="stat">
+                            <strong>2+</strong>
+                            <span>Years Learning</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>10+</strong>
+                            <span>Skills</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>∞</strong>
+                            <span>Ideas</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card reveal">
+
+                    <h3>
+                        What I do
+                    </h3>
+
+                    <p>
+                        My main interests include frontend development,
+                        WordPress website design, digital marketing and
+                        software development. I am focused on becoming an
+                        industry-ready software engineer.
+                    </p>
+
+
+                    <div class="socials">
+
+                        <a
+                            href="https://github.com/mahfujur-rh"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/mahfujur-r"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            LinkedIn ↗
+                        </a>
+
+                        <a href="mailto:mahfujurrahman1319@gmail.com">
+                            Email ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS SECTION
+    ====================================================== -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-head reveal">
+
+                <div class="eyebrow">
+                    My toolkit
+                </div>
+
+                <h2>
+                    Skills & technologies
+                </h2>
+
+                <p>
+                    Tools and technologies I use or am currently learning.
+                </p>
+
+            </div>
+
+
+            <div class="skills reveal">
+
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">C</span>
+                <span class="skill">C++</span>
+                <span class="skill">Java</span>
+                <span class="skill">Tailwind CSS</span>
+                <span class="skill">WordPress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">WooCommerce</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Git & GitHub</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">SEO</span>
+                <span class="skill">Digital Marketing</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS SECTION
+    ====================================================== -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-head reveal">
+
+                <div class="eyebrow">
+                    Selected work
+                </div>
+
+                <h2>
+                    Featured projects
+                </h2>
+
+                <p>
+                    A few projects that represent my learning and
+                    development journey.
+                </p>
+
+            </div>
+
+
+            <div class="projects">
+
+                <!-- Custom PC Builder -->
+
+                <article class="card project reveal">
+
+                    <div class="project-top">
+                        🖥️
+                    </div>
+
+                    <div class="project-body">
+
+                        <h3>
+                            Custom PC Builder
+                        </h3>
+
+                        <p>
+                            A web-based system for selecting PC components,
+                            checking compatibility and calculating total prices.
+                        </p>
+
+                        <a
+                            href="https://github.com/mahfujur-rh/Custom-Pc-Builder"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- StudyPilot -->
+
+                <article class="card project reveal">
+
+                    <div class="project-top">
+                        📚
+                    </div>
+
+                    <div class="project-body">
+
+                        <h3>
+                            StudyPilot
+                        </h3>
+
+                        <p>
+                            A student productivity platform for managing
+                            subjects, topics, exams and study schedules.
+                        </p>
+
+                        <a href="#contact">
+                            More details ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Mahfuz AI -->
+
+                <article class="card project reveal">
+
+                    <div class="project-top">
+                        🤖
+                    </div>
+
+                    <div class="project-body">
+
+                        <h3>
+                            Mahfuz AI
+                        </h3>
+
+                        <p>
+                            A personal AI assistant concept designed to
+                            provide multilingual and friendly digital assistance.
+                        </p>
+
+                        <a href="#contact">
+                            More details ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EDUCATION SECTION
+    ====================================================== -->
+
+    <section id="education">
+
+        <div class="container">
+
+            <div class="section-head reveal">
+
+                <div class="eyebrow">
+                    My journey
+                </div>
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+
+            <div class="card timeline reveal">
+
+                <div class="timeline-item">
+
+                    <small>
+                        2024 — Present
+                    </small>
+
+                    <h3>
+                        B.Sc. in Computer Science & Engineering
+                    </h3>
+
+                    <p>
+                        Metropolitan University, Sylhet, Bangladesh
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <small>
+                        2023
+                    </small>
+
+                    <h3>
+                        Higher Secondary Certificate
+                    </h3>
+
+                    <p>
+                        Sylhet Science & Technology College, Sylhet Board
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <small>
+                        2021
+                    </small>
+
+                    <h3>
+                        Secondary School Certificate
+                    </h3>
+
+                    <p>
+                        Al Hera Academy, Sylhet Board
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT SECTION
+    ====================================================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-head reveal">
+
+                <div class="eyebrow">
+                    Get in touch
+                </div>
+
+                <h2>
+                    Let's build something great
+                </h2>
+
+                <p>
+                    Have a project idea or want to connect?
+                    Send me a message or explore my profiles.
+                </p>
+
+            </div>
+
 
             <div class="contact-grid">
 
-              <!-- Contact Information -->
-              <div class="card reveal contact-info">
 
-                <h3>Contact Information</h3>
+                <!-- =================================================
+                     CONTACT INFORMATION
+                ================================================== -->
 
-                <p>
-                  Feel free to reach out for collaboration, website projects,
-                  digital marketing work, or just a friendly conversation.
-                </p>
+                <div class="card reveal contact-info">
 
-                <!-- Profile Links -->
-                <div class="profile-links">
+                    <h3>
+                        Contact Information
+                    </h3>
 
-                  <!-- GitHub -->
-                  <a
-                    href="https://github.com/mahfujur-rh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/github/ffffff"
-                      alt="GitHub">
+                    <p>
+                        Feel free to reach out for collaboration,
+                        website projects, digital marketing work,
+                        or just a friendly conversation.
+                    </p>
 
-                    <div>
-                      <h4>GitHub</h4>
-                      <p>View my work</p>
+
+                    <div class="profile-links">
+
+
+                        <!-- GitHub -->
+
+                        <a
+                            href="https://github.com/mahfujur-rh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/github/ffffff"
+                                alt="GitHub">
+
+                            <div>
+
+                                <h4>
+                                    GitHub
+                                </h4>
+
+                                <p>
+                                    View my work
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- LinkedIn -->
+
+                        <a
+                            href="https://www.linkedin.com/in/mahfujur-r"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                            <div>
+
+                                <h4>
+                                    LinkedIn
+                                </h4>
+
+                                <p>
+                                    Let's connect professionally
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- Facebook -->
+
+                        <a
+                            href="https://www.facebook.com/mahfujur.r.04"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/facebook/1877F2"
+                                alt="Facebook">
+
+                            <div>
+
+                                <h4>
+                                    Facebook
+                                </h4>
+
+                                <p>
+                                    View my profile
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- Instagram -->
+
+                        <a
+                            href="https://www.instagram.com/mahfujur.r.04"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/instagram/E4405F"
+                                alt="Instagram">
+
+                            <div>
+
+                                <h4>
+                                    Instagram
+                                </h4>
+
+                                <p>
+                                    Follow me on Instagram
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- Codeforces -->
+
+                        <a
+                            href="https://codeforces.com/profile/mahfujur-rh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/codeforces/1F8ACB"
+                                alt="Codeforces">
+
+                            <div>
+
+                                <h4>
+                                    Codeforces
+                                </h4>
+
+                                <p>
+                                    View my programming profile
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- CodeChef -->
+
+                        <a
+                            href="https://www.codechef.com/users/mahfujur_rh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/codechef/5B4638"
+                                alt="CodeChef">
+
+                            <div>
+
+                                <h4>
+                                    CodeChef
+                                </h4>
+
+                                <p>
+                                    View my programming profile
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- HackerRank -->
+
+                        <a
+                            href="https://www.hackerrank.com/mahfujurrahman04"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/hackerrank/2EC866"
+                                alt="HackerRank">
+
+                            <div>
+
+                                <h4>
+                                    HackerRank
+                                </h4>
+
+                                <p>
+                                    View my programming profile
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <!-- YouTube -->
+
+                        <a
+                            href="https://www.youtube.com/@mahfuzexplore"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="profile-card">
+
+                            <img
+                                src="https://cdn.simpleicons.org/youtube/FF0000"
+                                alt="YouTube">
+
+                            <div>
+
+                                <h4>
+                                    YouTube
+                                </h4>
+
+                                <p>
+                                    Visit my channel
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
                     </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- LinkedIn -->
-                  <a
-                    href="https://www.linkedin.com/in/mahfujur-rh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/linkedin/0A66C2"
-                      alt="LinkedIn">
-
-                    <div>
-                      <h4>LinkedIn</h4>
-                      <p> Grow our network</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- Facebook -->
-                  <a
-                    href="https://www.facebook.com/mahfujur.r.04"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/facebook/1877F2"
-                      alt="Facebook">
-
-                    <div>
-                      <h4>Facebook</h4>
-                      <p>Click to view my profile</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- Instagram -->
-                  <a
-                    href="https://www.instagram.com/mahfujur.r.04"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/instagram/E4405F"
-                      alt="Instagram">
-
-                    <div>
-                      <h4>Instagram</h4>
-                      <p>Follow with me</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- Codeforces -->
-                  <a
-                    href="https://codeforces.com/profile/mahfujur-rh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/codeforces/1F8ACB"
-                      alt="Codeforces">
-
-                    <div>
-                      <h4>Codeforces</h4>
-                      <p>Click to view my profile</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- CodeChef -->
-                  <a
-                    href="https://www.codechef.com/users/mahfujur_rh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/codechef/5B4638"
-                      alt="CodeChef">
-
-                    <div>
-                      <h4>CodeChef</h4>
-                      <p>Click to view my profile</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- HackerRank -->
-                  <a
-                    href="https://www.hackerrank.com/mahfujurrahman04"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/hackerrank/2EC866"
-                      alt="HackerRank">
-
-                    <div>
-                      <h4>HackerRank</h4>
-                      <p> Click to view my profile</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
-
-                  <!-- YouTube -->
-                  <a
-                    href="https://www.youtube.com/@mahfuzexplore"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="profile-card">
-                    <img
-                      src="https://cdn.simpleicons.org/youtube/FF0000"
-                      alt="YouTube">
-
-                    <div>
-                      <h4>YouTube</h4>
-                      <p>Click to visit my channel</p>
-                    </div>
-
-                    <span>↗</span>
-                  </a>
 
                 </div>
-              </div>
 
-              <!-- Contact Form -->
 
-              <!-- Contact Form -->
-              <div class="card reveal contact-form">
+                <!-- =================================================
+                     CONTACT FORM
+                ================================================== -->
 
-                <h3>Send Me a Message</h3>
+                <div class="card reveal contact-form">
 
-                <p>
-                  Have a question or project idea?
-                  Fill out the form below.
-                </p>
+                    <h3>
+                        Send Me a Message
+                    </h3>
 
-                <form action="backend/send-message-smtp.php" method="POST">
+                    <p>
+                        Have a question or project idea?
+                        Fill out the form below.
+                    </p>
 
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your name"
-                    required>
 
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="Your email"
-                    required>
+                    <form
+                        action="backend/send-message-smtp.php"
+                        method="POST">
 
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="7"
-                    placeholder="Write your message..."
-                    required></textarea>
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required>
 
-                  <button
-                    class="btn btn-primary"
-                    type="submit">
-                    Send Message ↗
-                  </button>
 
-                </form>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Your email"
+                            autocomplete="email"
+                            required>
 
-              </div>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+
+                        <button
+                            class="btn btn-primary"
+                            type="submit">
+
+                            Send Message ↗
+
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
-          </div>
-        </section>
 
-      </main>
+        </div>
 
-      <footer>
-        <div class="container">
-          <div class="footer-content">
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
             <p>
-              © <span id="year"></span> All rights reserved.
+                © <span id="year"></span>
+                All rights reserved.
             </p>
 
             <p class="footer-credit">
-              Designed &amp; Developed with <span>by</span> Mahfujur Rahman
+                Designed &amp; Developed by
+                <span>Mahfujur Rahman</span>
             </p>
-          </div>
+
         </div>
-      </footer>
 
-      <script src="script.js"></script>
+    </div>
 
-    </body>
-  </html>
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
