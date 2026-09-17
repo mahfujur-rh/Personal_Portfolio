@@ -26,6 +26,7 @@ A modern, responsive, and professional personal portfolio website developed usin
 
 ## 🛠️ Technologies Used
 
+
 * HTML5
 * CSS3
 * JavaScript
